@@ -5,6 +5,7 @@ function create(req, res) {
 
 // Retrieve
 function retrieveAll(req, res) {
+    // const allThinkpads = await Thinkpad.getAll();
     res.json({message: "You retrieved all"});
 };
 
@@ -16,4 +17,11 @@ function update(req, res) {
 // Delete
 function deleteOne(req, res) {
     res.json({message: "You deleted"});
+};
+
+module.exports = {
+    create,
+    retrieveAll,
+    update,
+    deleteOne
 };
